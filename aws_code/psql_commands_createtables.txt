@@ -1,0 +1,10 @@
+create table worldcities (CITY varchar, CITY_ASCII varchar, LAT varchar, LNG varchar, POP varchar, COUNTRY varchar, ISO2 varchar, ISO3 varchar, PROVINCE varchar); COPY 
+worldcities FROM '/path/to/simplemaps-worldcities-basic.csv' DELIMITER ',' CSV HEADER; create table tweets_analytics (ID varchar, UPDATE_TIME varchar, TEXT varchar, 
+NOUNS varchar, SENTIMENT varchar); create table location_analytics
+ (TEXT varchar,
+ ID varchar,
+ UPDATE_TIME varchar,
+ SENTIMENT varchar,
+ PLACE varchar,
+ LATITUDE numeric,
+ LONGITUDE numeric);
